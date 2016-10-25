@@ -1,2 +1,2 @@
-# binary_clock
-binary clock in javascript
+# Binary Clock
+fun little project to try to implement a binary clock, and also practice javascript & html
