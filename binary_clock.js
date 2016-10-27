@@ -16,18 +16,18 @@ function startClock(){
     var fontSize =w*0.14;
     ctx.font = "bolder "+fontSize+"px Titillium Web";
     if(hours<10)
-        ctx.fillText('0'+hours,w*0.04,h*0.14);
+        ctx.fillText('0'+hours,w*0.04,h*0.62);
     else
-        ctx.fillText(hours,w*0.04,h*0.14);
+        ctx.fillText(hours,w*0.04,h*0.62);
     if(minutes<10)
-        ctx.fillText('0'+minutes,w*0.04,h*0.28);
+        ctx.fillText('0'+minutes,w*0.04,h*0.76);
     else
-        ctx.fillText(minutes,w*0.04,h*0.28);
+        ctx.fillText(minutes,w*0.04,h*0.76);
 
     if(seconds<10)
-        ctx.fillText('0'+seconds,w*0.04,h*0.42);
+        ctx.fillText('0'+seconds,w*0.04,h*0.90);
     else
-        ctx.fillText(seconds,w*0.04,h*0.42);
+        ctx.fillText(seconds,w*0.04,h*0.90);
     
     //seconds 1's digit
     for(var i=0;i<4;i++){
