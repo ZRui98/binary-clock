@@ -4,7 +4,6 @@ function startClock(){
     var hours = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
-    console.log("here");
     var cvs = document.getElementById("clock");
     var ctx = cvs.getContext("2d");
     var w = window.innerWidth*0.75;
