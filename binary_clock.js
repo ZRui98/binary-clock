@@ -7,7 +7,7 @@ function startClock(){
     var cvs = document.getElementById("clock");
     var ctx = cvs.getContext("2d");
     var w = window.innerWidth*0.75;
-    var h = (2/3)*w;
+    var h = (3/5)*w;
     ctx.canvas.width  = w;
     ctx.canvas.height = h;
 
