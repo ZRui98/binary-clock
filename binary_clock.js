@@ -7,7 +7,7 @@ function startClock(){
     var cvs = document.getElementById("clock");
     var ctx = cvs.getContext("2d");
     var w = window.innerWidth*0.75;
-    var h = window.innerHeight*0.7;
+    var h = (2/3)*w;
     ctx.canvas.width  = w;
     ctx.canvas.height = h;
 
@@ -15,13 +15,13 @@ function startClock(){
     var fontSize =w*0.14;
     ctx.font = "bolder "+fontSize+"px Titillium Web";
     if(hours<10)
-        ctx.fillText('0'+hours,w*0.04,h*0.48);
+        ctx.fillText('0'+hours,w*0.04,h*0.9-2*w*0.14);
     else
-        ctx.fillText(hours,w*0.04,h*0.48);
+        ctx.fillText(hours,w*0.04,h*0.9-2*w*0.14);
     if(minutes<10)
-        ctx.fillText('0'+minutes,w*0.04,h*0.69);
+        ctx.fillText('0'+minutes,w*0.04,h*0.9-w*0.14);
     else
-        ctx.fillText(minutes,w*0.04,h*0.69);
+        ctx.fillText(minutes,w*0.04,h*0.9-w*0.14);
 
     if(seconds<10)
         ctx.fillText('0'+seconds,w*0.04,h*0.90);
